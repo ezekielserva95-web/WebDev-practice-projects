@@ -4,10 +4,14 @@ let reset = document.getElementById("reset");
 
 
 calculate.onclick = function(){
-  display.value = eval(display.value);
-  display.textContent = display.value;
+  try {
+    display.value = eval(display.value);
+    display.textContent = display.value;
+  } catch (error) {
+    window.alert("Please Enter A Valid Number");
+    console.log("Error! " + display.value + " is not a Number");
+  }
 }
-
 
 reset.onclick = function(){
   display.value = " ";

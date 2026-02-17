@@ -1,0 +1,48 @@
+form{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: floralwhite;
+  max-width: 400px;
+  max-height: 700px;
+  padding: 15px 10px;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px dimgray;
+}
+h1{
+  color: orange;
+}
+#displayBox{
+  border: none;
+  border: 7px double dimgray;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked + label {
+  color: #fff;
+  background-color: gray;
+  padding: 0px 11px;
+  border-radius: 5px;
+}
+label{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+button{
+  margin-top: 25px;
+  border: 2px solid dimgray;
+  font-size: 1.3em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: orange;
+  font-weight: bolder;
+}
+p{
+  font-weight: bold;
+}

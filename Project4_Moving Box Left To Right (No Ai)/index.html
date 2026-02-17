@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="box">
+    <div id="front"></div>
+    
+    <div id="wheel1"></div>
+    <div id="wheel2"></div>
+  </div>
+  <div id="ground"></div>
+  
+  <div class="keys">
+    <button id="left">◀️</button>
+    <button id="right">▶️</button>
+  </div>
+  
+  
+  <script>
+    let position = 0;
+    left.addEventListener("click", event => {
+      position -= 70;
+      box.style.marginLeft = position + "px";
+    });
+      right.addEventListener("click", event => {
+      position += 70;
+      box.style.marginLeft = position + "px";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.mainBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  width: 250px;
+  border: 5px solid black;
+  padding: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.display{
+  height: 300px;
+  width: 250px;
+  border: 5px solid black;
+  margin-bottom: 10px;
+  background-color: floralwhite;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mainBox .keys{
+  display: grid;
+  grid-template-columns: repeat(2, 40px);
+  grid-template-rows: repeat(2, 40px);
+  gap: 5px;
+  border: 3px solid black;
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: dimgray;
+}
+button{
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: #1F1F1F;
+  color: white;
+}
+
+#ship{
+  font-size: 2.5em;
+  display: block;
+  width: fit-content;
+  transition: margin-left 0.3s ease, margin-top 0.3s ease;
+  
+}

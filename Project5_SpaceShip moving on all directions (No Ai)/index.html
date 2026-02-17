@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="mainBox">
+    <div class="display">
+      <div id="ship">🛸</div>
+    </div>
+    
+    <div class="keys">
+      <button id="left">L</button>
+      <button id="right">R</button>
+      <button id="up">U</button>
+      <button id="down">D</button>
+    </div>
+  </div>
+  <p id="info">Coordinate: 0</p>
+  <button id="reset">Reset</button>
+  <p>
+    L = Left<br>
+    R = Right<br>
+    U = Up<br>
+    D = Down
+  </p>
+<script>
+  let position = 0;
+  
+  left.addEventListener("click", event => {
+  position -= 40;
+  ship.style.marginLeft = position + "px";
+  
+  info.textContent = "Coordinate: " + position;
+  });
+  
+  right.addEventListener("click", event => {
+  position += 40;
+  ship.style.marginLeft = position + "px";
+  
+  info.textContent = "Coordinate: " + position;
+  });
+
+  up.addEventListener("click", event => {
+  position -= 40;
+  ship.style.marginTop = position + "px";
+  
+  info.textContent = "Coordinate: " + position;
+  });
+
+  down.addEventListener("click", event => {
+  position += 40;
+  ship.style.marginTop = position + "px";
+  
+  info.textContent = "Coordinate: " + position;
+  });
+  
+  reset.addEventListener("click", event => {
+    ship.style.margin = "0px";
+    info.textContent = "Coordinate: 0";
+  });
+</script>
+</body>
+</html>
